@@ -54,4 +54,14 @@ void BinaryTree::InorderTraverse(BTreeNode* main)
 
 }
 
+int BinaryTree::getTreeHeight(BTreeNode* node)
+{
+   if(node == NULL)
+      return 0;
 
+   int leftHeight = getTreeHeight(node->left);
+   int rightHeight = getTreeHeight(node->right);
+
+   return 1 + max(leftHeight, rightHeight);
+
+}

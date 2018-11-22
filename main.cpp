@@ -24,6 +24,9 @@ int main()
 
     binaryTreeObj.InorderTraverse(bt1);
 
+
+    cout << "\nTree Height: " << binaryTreeObj.getTreeHeight(bt1) << endl;
+
     return 0;
 }
 

@@ -26,6 +26,8 @@ public:
    void MakeRightSubTree(BTreeNode* main, BTreeNode* sub);
    void InorderTraverse(BTreeNode* main);
 
+   int getTreeHeight(BTreeNode* node);
+
 };
 
 #endif
